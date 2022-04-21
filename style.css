@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --default-font: 'Poppins';
+  --gray: #F4F7FE;
+  --shadow: -10px -10px 15px rgba(255,255,255,0.55),
+    10px 10px 15px rgba(70,70,70,0.12);
+  --coral: #F97A8B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--default-font);
+  box-sizing: border;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--gray);
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  overflow: hidden;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box .form-group .input {
+  position: relative;
+  width: 100%;
+  outline: none;
+  text-align: right;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  color: royalblue;
+  background: transparent;
+}
+
+.box .form-group #small-input {
+  font-size: 28px;
+}
+
+.box .form-group #big-input {
+  font-size: 60px;
+}
+
+.box .wrapper-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.box .wrapper-container .button,
+.box .wrapper-container .button-clear, 
+.box .wrapper-container .button-delete,
+.box .wrapper-container .button-equel {
+  width: 22.9%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  background: #fff;
+  box-shadow: var(--shadow);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.box .wrapper-container .long-button {
+  width: 49%;
+}
+
+.box .wrapper-container .operator {
+  color: royalblue;
+}
+
+.box .wrapper-container .button-clear {
+  background: var(--coral);
+  color: #fff;
+}
+
+.box .wrapper-container .button-equel {
+  background: royalblue;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
