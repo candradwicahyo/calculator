@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0; 
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f7fe;
+}
+
+/* for desktop */
+.container {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-wrapper .input {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  text-align: right;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 500;
+}
+
+.input-wrapper .small-input {
+  height: 30px;
+  padding-right: 5px;
+  font-size: 30px;
+}
+
+.input-wrapper .big-input {
+  height: 50px;
+  font-size: 60px;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrapper .button {
+  position: relative;
+  width: 21%;
+  padding: 15px 20px;
+  margin: 5px;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: -10px -10px 15px rgba(255,255,255,0.55),
+               10px 10px 15px rgba(70,70,70,0.12);
+}
+
+/* button with value 0 */
+.wrapper .button:nth-child(17) {
+  width: 46%;
+}
+
+.wrapper .btn-clear {
+  background: red;
+}
+
+.wrapper .btn-equal {
+  background: royalblue;
+}
+
+.wrapper .btn-clear,
+.wrapper .btn-equal {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  /* for mobile */
+  .container {
+    width: 80%;
+  }
+}
